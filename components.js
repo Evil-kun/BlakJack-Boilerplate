@@ -496,18 +496,6 @@ user.updateIdentity();
         this.sendReply('Your symbol has been reset.');
     },
 
-    emoticons: 'emoticon',
-    emoticon: function (target, room, user) {
-        if (!this.canBroadcast()) return;
-        var name = Object.keys(Core.emoticons),
-            emoticons = [];
-        var len = name.length;
-        while (len--) {
-            emoticons.push((Core.processEmoticons(name[(name.length-1)-len]) + '&nbsp;' + name[(name.length-1)-len]));
-        }
-        this.sendReplyBox('<b><u>List of emoticons:</b></u> <br/><br/>' + emoticons.join(' ').toString());
-    },
-
     u: 'urbandefine',
     ud: 'urbandefine',
     urbandefine: function (target, room, user) {
