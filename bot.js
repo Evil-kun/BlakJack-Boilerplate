@@ -10,7 +10,7 @@
  */
 
 var config = {
-    name: 'Blak Bot',
+    name: 'Suicune Bot',
     userid: function () {
         return toId(this.name);
     },
@@ -21,7 +21,7 @@ var config = {
         1: 'warn',
         2: 'mute',
         3: 'hourmute',
-        4: 'roomban',
+        4: 'lock',
         5: 'ban'
     },
     privaterooms: ['staff'],
